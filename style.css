@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+.results{
+    width: 1348px;
+    height: 80.1svh;
+    position: relative;
+    overflow-y: hidden;
+}
+#head{
+    text-align: center;
+}
+.thumb_image{
+    width: 100%;
+}
+.Songcard{
+    background-color: rgba(235, 230, 230, 0.048);
+    backdrop-filter: blur(4px);
+    box-shadow: 0px 0px 12px 12px rgba(68, 68, 68, 0.048);
+    top:15%;
+    left: 35%;
+    position: absolute;
+    width: 410px;
+    /* height: 370px; */
+    border: 2px solid rgb(48, 48, 48);
+    border-radius: 12px;
+}
+.songbody{
+    padding-left: .4rem;
+}
+.watch , .dnlbtn,#submit{
+    border-radius: 12px;
+    background-color: rgb(156, 58, 247);
+    text-decoration: none;
+    padding: 7px 38px;
+    color: rgb(255, 255, 255);
+    transition: background-color .34s 0s ease-in;
+    cursor: pointer;
+}
+#submit{
+    background-color: rgb(186, 74, 214);
+    margin-left: 2rem;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+}
+.watch:hover,.dnlbtn:hover{
+    background-color: rgb(88, 88, 255);
+}
+.dnlbtn{
+    width:inherit;
+    font-size:.97rem;
+    padding: 8px 22px;
+    margin-top: 1rem;
+}
+
+.btn{
+    margin-top: 1.84rem;
+    margin-bottom: .84rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 180px;
+}
+.error{
+    color: red;
+    position: absolute;
+    margin-top: .9rem;
+    left: 40%;
+}
+#wait{
+    font-size: 1.2rem;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    right: 9%;    
+    z-index: 100;
+    top:-50%;
+    animation: pop .3  0s forwards alternate;
+}
