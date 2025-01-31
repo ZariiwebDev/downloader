@@ -30,6 +30,9 @@
 .songbody{
     padding-left: .4rem;
 }
+.data{
+    display: flex;
+}
 .watch , .dnlbtn,#submit{
     border-radius: 12px;
     background-color: rgb(156, 58, 247);
@@ -92,4 +95,32 @@ input{
     z-index: 100;
     top:-50%;
     animation: pop .3  0s forwards alternate;
+}
+
+@media (width<=600px){
+    .data{
+        display: flex;
+        flex-direction: column;
+    }
+    #submit {
+        margin-top: 1rem;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    .results{
+        width: auto;
+        height: 100vh;
+        position: relative;
+    }
+    #head{
+        font-size: 1.1rem;
+    }
+    .Songcard{
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        left: 25%;
+        top: 15%;
+    }   
 }
